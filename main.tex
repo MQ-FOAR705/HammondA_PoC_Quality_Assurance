@@ -1,0 +1,93 @@
+\documentclass[11pt, a4paper,]{scrartcl}
+%\setkomavar{subject}{Title of essay?} % Comment out if you don't need a subject line
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{ragged2e}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+%------------------------------------------------------------------
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+\setlength{\voffset}{-0.5in}
+
+%------------------------------------------------------------------
+\begin{document}
+
+\setstretch{1.5}
+
+\begin{flushleft}{\footnotesize{}
+ANTH702 - Discussion Report\\
+Aaron Hammond - 43691455
+}
+\end{flushleft}
+%------------------------------------------------------------------
+
+\hrule
+%-------------------------------------------------------------------
+\begin{center}
+\large{Proof of Concept - Quality Assurance}
+\end{center}
+%-------------------------------------------------------------------
+
+\section{Instructions}
+The purpose of this document is to dictate the testing process for the solution. It outlines the necessary steps to complete each section of the solution. Print this document, place ticks or crosses next to the task. Please follow each step accordingly and identify if it was successful or not during the process. There is additional space for comments below each portion of testing. Users must have a testing file for each file type prepared to use during testing.\par
+
+After each portion of testing, provide the results for each portion of testing to Trello under the activity tab and ensure to include the comment.
+
+\subsection{Conversion}
+\subsubsection{Interviews}
+\begin{enumerate}
+    \item Open web browser
+    \item Go to www.otranscribe.com
+    \item Upload interview for transcribing
+    \item Click 'start transcribing'
+    \item Transcribe audio
+    \item Export text
+    \item Save as text file
+\end{enumerate}
+Comments:
+\vspace{2cm}
+\subsubsection{Literature}
+As a researcher i should be able to:
+\begin{enumerate}
+    \item Ensure the pdftotext.exe file is in the same folder as the pdf files
+    \item Select all pdf files and drag them into the pdftotext.exe file
+    \item Recognise that new text files have been created with the same name as their pdf counterparts
+    \item Move the new text files into the articles folder
+    \item Check each file to ensure that text conversion was successful without symbols and corruption
+    \item Check to ensure that the length of converted files also match their original pdf formats
+\end{enumerate}
+Comments:
+\vspace{2cm}
+\subsubsection{Fieldnotes}
+\begin{enumerate}
+    \item Open the Joplin program
+    \item Select and export field notes
+    \item Select fieldnotes folder
+    \item Click export button
+\end{enumerate}
+Comments:
+\vspace{2cm}
+
+\subsection{Organisation}
+\begin{enumerate}
+    \item Navigate to the parent folder
+    \item Run the Organize.bat file
+    \item Check the contents of the RAW folder to ensure that all files have been moved there
+    \item Check that each file is correctly assigned its prefix according to its source
+\end{enumerate}
+Comments:
+\vspace{2cm}
+\subsection{Analysis}
+\begin{enumerate}
+    \item Go to https://voyant-tools.org
+    \item Click 'upload files'
+    \item Navigate to the RAW folder and highlight all files
+    \item Click upload
+    \item Review results
+    \item Ensure that each file type is represented in the sources window
+    \item Review results
+\end{enumerate}
+Comments:
+\vspace{2cm}
+\end{document}
